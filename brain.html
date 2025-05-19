@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>$BRAINZ</title>
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="brain.css"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
+
+
+  <!-- Font Awesome CDN (simplified for icon visibility) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <style>
+    /* Minimal styles to ensure social icons show nicely */
+    .social-icons {
+      display: flex;
+      gap: 25px;
+      margin: 20px 0;
+    }
+    .social-icons a {
+      color: white;
+      font-size: 32px;
+      text-decoration: none;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+    .social-icons a:hover {
+      transform: scale(1.3);
+      color: #5fa14b;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" role="banner">
+    <div class="logo">
+      <img src="logo.png" alt="BRAINZ Logo" />
+    </div>
+    <nav class="nav" role="navigation" aria-label="Primary Navigation">
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#chart">Chart</a></li>
+        <li><a href="#nft">NFT</a></li>
+        <li><a href="#announcement">Announcement</a></li>
+      </ul>
+    </nav>
+    <button class="buy-btn" type="button">Buy</button>
+
+    <button class="hamburger" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero" aria-label="Hero Section">
+
+    <div class="overlay">
+      <div class="hero-left">
+        <img src="image1.png" alt="Zombie Character" >  
+      </div>
+      <div class="hero-right">
+        <h1>Welcome to the Zombie Horde!</h1>
+        <p>Get ready to join the world of $BRAINZ, the token that’s making waves in the crypto space</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Telegram"><i class="fab fa-telegram-plane" aria-hidden="true"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+        </div>
+        <div class="hero-buttons">
+          <button class="buy-btn" type="button">Buy</button>
+          <button class="join-btn" type="button">Join the Horde</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    
+<!-- ABOUT SECTION -->
+<section id="about" class="about-section">  
+
+
+  <div class="about-overlay">
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>What is $BRAINZ?</h2>
+        <p>
+          $BRAINZ is a revolutionary crypto project built on the principles of survival, growth, and strategic vision.
+          In a market full of panic and uncertainty, we stand firm and HODL. While others may sell in fear,
+          we feast on dips and aim for long-term success.
+        </p>
+        <button class="about-read-more">Read More</button>
+      </div>
+      <div class="about-image">
+        <img src="image2.png" alt="Zombie Character">
+      </div>
+    </div>
+  </div>
+
+  <div class="about-lower-grid">
+    <div class="about-lower-image">
+      <img src="image3.png" alt="Brain Image">
+    </div>
+
+    <div class="about-lower-content">
+      <div class="about-heading-line">------ About Us ------</div>
+      <div class="about-card-wrapper">
+        <div class="about-card">
+          <div class="about-card-head">
+            Why $BRAINZ?
+          </div>
+          <div class="about-card-body">
+            <p>
+              We’re committed to expanding the $BRAINZ universe, integrating into the Metaverse,
+              and rewarding those who believe in our vision. The journey is long,
+              but with every $BRAINZ token you hold, you’re securing your place in the revolution.
+            </p>
+            <button class="about-card-button">Read More</button>
+          </div>
+        </div>
+
+        <div class="about-card">
+          <div class="about-card-head">
+            Our Mission
+          </div>
+          <div class="about-card-body">
+            <p>
+              We’re committed to expanding the $BRAINZ universe, integrating into the Metaverse,
+              and rewarding those who believe in our vision. The journey is long,
+              but with every $BRAINZ token you hold, you’re securing your place in the revolution.
+            </p>
+            <button class="about-card-button">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<section id="chart" class="brainz-section">
+  <div class="brainz-content">
+    <div class="brainz-left">
+      <h2>Live BRAINZ Price: <span id="live-price">Loading...</span></h2>
+      <p>Stay updated with the real-time price of BRAINZ directly from Dexscreener.</p>
+    </div>
+    <div class="brainz-right">
+      <img src="image4.png" alt="Hero Character">
+    </div>
+  </div>
+</section>
+
+  
+    <!-- Dexscreener embed chart -->
+    <div class="dexscreener-embed">
+      <iframe
+        src="https://dexscreener.com/base/0x50351c643a72a5d2aedd0a6e2ce24910fb317d15?embed=1"
+        frameborder="0"
+        allowfullscreen
+        scrolling="no"
+      ></iframe>
+    </div>
+  </section>
+  
+
+
+<section id = "nft" class="nft-section">
+  <div class="nft-overlay">
+    <div class="nft-heading">
+      <p class="nft-subtitle">Check out our</p>
+      <h2 class="nft-title">BRAINZ</h2>
+      <p class="nft-subtitle">NFT Collections</p>
+    </div>
+
+    <div id="nft-container">
+      <iframe
+        id="nft-iframe"
+        src="https://opensea.io/collection/brainz?embed=true"
+        width="100%"
+        height="600"
+        frameborder="0"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
+
+      <div id="nft-error" style="display: none;" class="nft-error-message">
+        <p>🚫 NFT Collection not found or failed to load. Please check the collection link or try again later.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id ="announcement" class="announcement-section">
+  <div class="announcement-overlay"></div>
+
+  <!-- Grid: Left Text + Right Image -->
+  <div class="announcement-grid">
+    <div class="announcement-text">
+      <h1 class="brainz-title">BRAINZ</h1>
+      <p class="announcement-subtitle">Announcement</p>
+    </div>
+    <div class="announcement-image">
+      <img src="image5.png" alt="Zombie Character">
+    </div>
+  </div>
+
+  <!-- Scrollable Card Section -->
+  <section class="card-section">
+    <button class="arrow left" onclick="scrollCards(-1)">&#8249;</button>
+    
+    <div class="card-container" id="cardContainer">
+      <div class="card">
+        <div class="card-header">
+          <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=025" alt="BTC Logo" width="24" height="24" style="margin-right:8px;">
+          <h3>LATEST AIRDROP NEWS</h3>
+        </div>
+        <p>We’ll be giving away 3,000 $BRAINZ tokens to our early supporters! Join the undead revolution — complete simple tasks like following us on Twitter, joining our Discord, and sharing our project to qualify. The fun begins soon!</p>
+        <button class="read-more">Read More</button>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=025" alt="BTC Logo" width="24" height="24" style="margin-right:8px;">
+          <h3>NOTIFICATIONS</h3>
+        </div>
+        <p>Stay updated with all the latest announcements and changes. Don't miss any important alerts related to token distributions and project milestones.</p>
+        <button class="read-more">Read More</button>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=025" alt="BTC Logo" width="24" height="24" style="margin-right:8px;">
+          <h3>UPCOMING EVENTS</h3>
+        </div>
+        <p>Join our upcoming AMA sessions and community calls to ask questions and get direct responses from the dev team. Mark your calendars for exciting events!</p>
+        <button class="read-more">Read More</button>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=025" alt="BTC Logo" width="24" height="24" style="margin-right:8px;">
+          <h3>PARTNERSHIPS</h3>
+        </div>
+        <p>We’re thrilled to announce new partnerships that will expand our ecosystem. Stay tuned for collaborative projects and integrations.</p>
+        <button class="read-more">Read More</button>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=025" alt="BTC Logo" width="24" height="24" style="margin-right:8px;">
+          <h3>DEVELOPMENT UPDATES</h3>
+        </div>
+        <p>Our development team is working hard to bring new features and improvements. Read the latest progress reports and roadmaps here.</p>
+        <button class="read-more">Read More</button>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=025" alt="BTC Logo" width="24" height="24" style="margin-right:8px;">
+          <h3>COMMUNITY SPOTLIGHT</h3>
+        </div>
+        <p>Highlighting our amazing community members who contribute ideas, support others, and help grow the $BRAINZ ecosystem.</p>
+        <button class="read-more">Read More</button>
+      </div>
+    </div>
+    
+    <button class="arrow right" onclick="scrollCards(1)">&#8250;</button>
+  </section>
+</section>
+
+
+  
+
+
+  
+  <script src="brain.js"></script>
+
+
+
+
+
+</body>
+</html>
